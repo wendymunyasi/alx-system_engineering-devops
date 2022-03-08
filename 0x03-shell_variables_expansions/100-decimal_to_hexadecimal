@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%x\n' 15
+printf '%x\n' $DECIMAL
