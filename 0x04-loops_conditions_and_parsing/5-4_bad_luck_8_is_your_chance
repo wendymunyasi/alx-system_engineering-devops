@@ -4,7 +4,7 @@
 counter=1
 while [ $counter -le 10 ]
 do
-        if [[ $counter == '4' ]]
+    if [[ $counter == '4' ]]
     then
         echo "bad luck"
     elif [[ $counter == '8' ]]
