@@ -4,3 +4,4 @@
 # The regular expression must be only matching: capital letters
 
 puts ARGV[0].scan(/[[:upper:]]/).join
+
