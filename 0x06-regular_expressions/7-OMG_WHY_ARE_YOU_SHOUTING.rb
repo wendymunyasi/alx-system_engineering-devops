@@ -3,8 +3,4 @@
 # matching method
 # This script should output: [SENDER],[RECEIVER],[FLAGS]
 
-string = ARGV[0]
-sender = string.scan(/\[from:(.?\w+)/).join
-reciver = string.scan(/\[to:(\+?\d+)/).join
-flags = string.scan(/\[flags:(.?\d:.?\d:.?\d:.?\d:.?\d)/).join
-puts "#{sender},#{reciver},#{flags}"
+puts ARGV[0].scan(/\[from:(\+?(?:\w)+)\]\s\[to:(\+?(?:\w)+)\]\s\[flags:((?:-?\d:?)+)\]/).join(separator=",")"
