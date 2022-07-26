@@ -3,4 +3,4 @@
 # matching method
 # The regular expression must match the given cases
 
-puts ARGV[0].scan(/hb?tn/).join
+puts ARGV[0].scan(/hbt{2,5}n/).join
