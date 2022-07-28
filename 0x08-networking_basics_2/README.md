@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
 ### Project Description.
-Learn hat is localhost/127.0.0.1.
+Learn what is localhost/127.0.0.1.
 What is 0.0.0.0.
 What is `/etc/hosts`.
 How to display your machine’s active network interfaces.
