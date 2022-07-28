@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Script that displays all active IPv4 IPs on the machine it’s executed on.
+# Script that listens on port 98 on localhost.
 
-hostname -I | cut -d' ' -f1 ; hostname -i
+nc -l 98
