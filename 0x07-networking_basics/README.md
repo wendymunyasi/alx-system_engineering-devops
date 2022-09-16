@@ -19,7 +19,7 @@ Tel:*+254707240068.*
 *   Your Bash script must pass `shellcheck` without any error.
 *   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
-### Project Description.
+## Project Description.
 Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
 
 
@@ -88,6 +88,6 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
 * **5. Is the host on the network** - Write a Bash script that pings an IP address passed as an argument. `5-is_the_host_on_the_network`.
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

@@ -21,7 +21,7 @@ Tel:*+254707240068.*
 *   All your regex must be built for the **Oniguruma** library.
 *   Each script accepts one argument and pass it to a regular expression matching method.
 
-### Project Description.
+## Project Description.
 Learn about regular expressions and building them using **Oniguruma** library which uses **Ruby** by default.
 
 Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the `//`:
@@ -106,6 +106,6 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
     $
     ```
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

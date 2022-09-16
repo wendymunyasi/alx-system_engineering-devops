@@ -19,7 +19,7 @@ Tel:*+254707240068.*
 *   Your Bash script must pass `shellcheck` without any error.
 *   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
-### Project Description.
+## Project Description.
 Learn what is a PID.
 What is a process.
 How to find a process’ PID.
@@ -98,6 +98,6 @@ What are the 2 signals that cannot be ignored.
     ```
 ---
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

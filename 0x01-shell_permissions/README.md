@@ -19,7 +19,7 @@ Tel:*+254707240068.*
 *   All your bash scripts must be executable.
 *   You are not allowed to use backticks, `&&`, `||` or `;`.
 
-### Project Description.
+## Project Description.
 Learn what do the commands `chmod`, `sudo`, `su`, `chown`, `chgrp` do.
 Linux file permissions.
 How to represent each of the three sets of permissions (owner, group, and other) as a single digit.
@@ -58,6 +58,6 @@ How to change user ID or become superuser.
 * **16. If only** - Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`. `102-if_only`.
 * **17. Star Wars** - Write a script that will play the StarWars IV episode in the terminal. `103-Star_Wars`.
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

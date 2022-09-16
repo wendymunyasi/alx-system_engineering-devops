@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   You are not allowed to use `bc`, `sed` or`awk`.
 *   You are not allowed to use `&&`, `||` or `;`.
 
-### Project Description.
+## Project Description.
 Learn shell navigation commands such as `cd`, `pwd` and `ls`.
 How to manipulate files/directories using `cp`, `mv`, `rm` and `mkdir`.
 What do the commands `ls`, `less`, `file` do.
@@ -81,6 +81,6 @@ What is the difference between a hard link and a symbolic link.
     ```
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

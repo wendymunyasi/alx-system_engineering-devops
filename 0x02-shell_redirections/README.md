@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   You are not allowed to use `bc`, `sed` or`awk`.
 *   You are not allowed to use `&&`, `||` or `;`.
 
-### Project Description.
+## Project Description.
 Learn what do the commands `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr` do.
 How to redirect standard output to a file.
 How to get standard input from a file instead of the keyboard.
@@ -204,6 +204,6 @@ What is the `/etc/shadow` file and what is its format.
 * **26. The biggest fan** - Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests. Order by number of requests, most active host or IP at the top. `103-the_biggest_fan`.
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

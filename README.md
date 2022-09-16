@@ -26,3 +26,5 @@ All of the following folders are projects done during the studies:
 | [`0x06. Regular expression`](https://github.com/wendymunyasi/alx-system_engineering-devops/edit/master/0x06-regular_expressions) | It aims to learn about how to build a regular expression.|
 | [`0x07. Networking basics #0`](https://github.com/wendymunyasi/alx-system_engineering-devops/edit/master/0x07-networking_basics) | It aims to learn about the OSI model, LAN, WAN and the basics of networking.|
 | [`0x08. Networking basics #1`](https://github.com/wendymunyasi/alx-system_engineering-devops/edit/master/0x08-networking_basics_2) | It aims to learn more about networking, localhosts and `/etc/hosts`.|
+| [`0x09. Web infrastructure design`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design) | It aims to learn more about web infrastructure design, HTTPS, DNS etc.|
+| [`0x0A. Configuration management`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | It aims to learn about puppet.|

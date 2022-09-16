@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   Your Bash script must pass `shellcheck` without any error.
 *   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
-### Project Description.
+## Project Description.
 Learn how to create SSH keys.
 What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`.
 How to use `while`, `until` and `for` loops.
@@ -90,6 +90,6 @@ What are files and other comparison operators, and how to use them.
     ```
 ---
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com

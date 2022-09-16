@@ -20,7 +20,7 @@ Tel:*+254707240068.*
 *   You are not allowed to use `bc`, `sed` or`awk`.
 *   You are not allowed to use `&&`, `||` or `;`.
 
-### Project Description.
+## Project Description.
 Practicing usage of shell variables, initialization files and arithmetic and various shell commands. What is expansion and how to use them.
 What is the difference between single and double quotes and how to use them properly.
 How to do command substitution with `$()` and backticks.
@@ -109,6 +109,6 @@ How to temporarily disable an alias.
 * **17. I'm an instant star. Just add water and stir.** - Write a shell script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result. `WATER` is in base `water`. `STIR` is in base `stir`. The result should be in base `bestchol`. `103-water_and_stir`.
 
 
-### Collaborate
+## Collaborate
 
 To collaborate, reach me through my email address wendymunyasi@gmail.com
