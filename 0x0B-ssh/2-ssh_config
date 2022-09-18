@@ -1,0 +1,1 @@
+ssh-copy-id -i school.pub ubuntu@3.236.87.243
