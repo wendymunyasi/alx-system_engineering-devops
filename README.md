@@ -29,3 +29,5 @@ All of the following folders are projects done during the studies:
 | [`0x09. Web infrastructure design`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design) | It aims to learn more about web infrastructure design, HTTPS, DNS etc.|
 | [`0x0A. Configuration management`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | It aims to learn about puppet.|
 | [`0x0B. SSH`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0B-ssh) | It aims to learn about servers and SSH.|
+| [`0x0C. Web server`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0C-web_server) | It aims to learn about web servers, child processes and HTTP requests.|
+| [`0x0D. Web stack debugging #0`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0B-ssh) | It aims to learn about webstack debugging, docker and network basics.|
