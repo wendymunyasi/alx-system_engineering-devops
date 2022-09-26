@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# script to install and configure HAproxy on load balancer server
+apt-get install --no-install-recommends software-properties-common
+add-apt-repository ppa:vbernat/haproxy-2.6
+apt-get update
+apt-get install haproxy=2.6.\*
+echo "frontend app_servers
+	bind *:80
+	default_backend apps
+backend apps
+	balance roundrobin
+	server web-01 3.227.217.150:80 check
+	server web-02 3.95.27.202:80 check
+	" | sudo tee -a /etc/haproxy/haproxy.cfg
+systemctl restart haproxy
