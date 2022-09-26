@@ -6,10 +6,11 @@ apt-get update
 apt-get install haproxy=2.6.\*
 echo "frontend app_servers
 	bind *:80
+    mode http
 	default_backend apps
 backend apps
 	balance roundrobin
-	server web-01 3.227.217.150:80 check
-	server web-02 3.95.27.202:80 check
+	server 20639-web-01 3.227.217.150:80 check
+	server 20639-web-02 3.95.27.202:80 check
 	" | sudo tee -a /etc/haproxy/haproxy.cfg
 service haproxy restart
