@@ -2,11 +2,7 @@
 # script that doubles the number of webservers and adds new configs
 
 # install nginx
-apt-get update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-mkdir -p /var/www/html /var/www/error
-chmod -R 755 /var/www
+lsb_release -d ; hostname -I ; hostname ; apt-get update ; apt-get install nginx -yww
 
 # update html files
 echo 'Hello World!' > /var/www/html/index.html
@@ -42,8 +38,6 @@ SERVER_CONFIG=\
 
 bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
-if [ "$(pgrep -c nginx)" -le 0 ]; then
-	service nginx start
-else
-	service nginx restart
-fi
+nginx -t
+
+systemctl reload nginx ; systemctl restart nginx
