@@ -4,6 +4,10 @@
 # install nginx
 lsb_release -d ; hostname -I ; hostname ; apt-get update ; apt-get install nginx -yww
 
+ufw allow 'Nginx HTTP'
+mkdir -p /var/www/html /var/www/error
+chmod -R 755 /var/www
+
 # update html files
 echo 'Hello World!' > /var/www/html/index.html
 echo -e "Ceci n\x27est pas une page" > /var/www/error/404.html
