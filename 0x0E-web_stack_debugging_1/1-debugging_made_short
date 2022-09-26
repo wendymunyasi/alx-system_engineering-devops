@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # script to fix nginx server
-mv /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-cp /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default 
-service nginx start
+echo -e "sed -iE 's/listen 8080/listen 80/g' /etc/nginx/sites-enabled/default\
+sed -i 's/listen \[::\]:8080/listen \[::\]:80/g' /etc/nginx/sites-enabled/default\n
+pgrep nginx -o > /run/nginx.pid\nnginx -s reload\necho''> /run/nginx.pid" | bash
