@@ -44,4 +44,8 @@ bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
 nginx -t
 
-systemctl reload nginx ; systemctl restart nginx
+if [ "$(pgrep -c nginx)" -le 0 ]; then
+	service nginx start
+else
+	service nginx restart
+fi
