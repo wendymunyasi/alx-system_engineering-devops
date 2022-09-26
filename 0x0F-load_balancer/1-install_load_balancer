@@ -13,4 +13,4 @@ backend apps
 	server 20639-web-01 3.227.217.150:80 check
 	server 20639-web-02 3.95.27.202:80 check
 	" >> /etc/haproxy/haproxy.cfg
-service haproxy restart
+service haproxy start
