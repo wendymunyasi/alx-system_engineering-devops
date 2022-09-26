@@ -12,4 +12,4 @@ backend apps
 	server web-01 3.227.217.150:80 check
 	server web-02 3.95.27.202:80 check
 	" | sudo tee -a /etc/haproxy/haproxy.cfg
-systemctl restart haproxy
+service haproxy restart
