@@ -4,7 +4,7 @@ apt-get install --no-install-recommends software-properties-common
 add-apt-repository ppa:vbernat/haproxy-2.6
 apt-get update
 apt-get install haproxy=2.6.\*
-echo "frontend app_servers
+echo -e "frontend app_servers
 	bind *:80
     mode http
 	default_backend apps
