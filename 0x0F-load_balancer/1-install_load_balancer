@@ -4,6 +4,10 @@ apt-get install --no-install-recommends software-properties-common
 add-apt-repository ppa:vbernat/haproxy-2.6
 apt-get update
 apt-get install haproxy=2.6.\*
+
+# Enable HAProxy to be started by the init script.
+sed -i '$aENABLED=1' /etc/default/haproxy
+
 echo -e "frontend app_servers
 	bind *:80
     mode http
@@ -13,4 +17,4 @@ backend apps
 	server 20639-web-01 3.227.217.150:80 check
 	server 20639-web-02 3.95.27.202:80 check
 	" >> /etc/haproxy/haproxy.cfg
-service haproxy start
+service haproxy restart
