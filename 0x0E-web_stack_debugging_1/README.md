@@ -35,7 +35,7 @@ Tel:*+254707240068.*
 	root@966c5664b21f:/# curl 0:80
 	<!DOCTYPE html>
 	<html>
-	<head>
+	<head> 
 	<title>Welcome to nginx!</title>
 	<style>
 			body {
