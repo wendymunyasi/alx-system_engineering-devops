@@ -133,7 +133,7 @@ What DNS stands for and its main role.
 
 * **3. Redirection** - Configure your Nginx server so that `/redirect_me` is redirecting to another page. `3-redirection`.
 
- Requirements:
+  Requirements:
 
   * The redirection must be a “301 Moved Permanently”.
   * You answer file should be a Bash script containing commands to automatically configure a Ubuntu machine to respect above requirements.
@@ -182,7 +182,6 @@ What DNS stands for and its main role.
   * Nginx should be listening on port `80`.
   * When querying Nginx at its root `/` with a `GET` request (requesting a page) using `curl`, it must return a page that contains the string `Hello World!`.
   * The redirection must be a "301 Moved Permanently".
-  ```
 ---
 
 ## Collaborate
