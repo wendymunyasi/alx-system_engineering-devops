@@ -1,42 +1,46 @@
 #!/usr/bin/env bash
 # script to install and configure HAproxy on load balancer server
-apt-get install -y software-properties-common
-add-apt-repository ppa:vbernat/haproxy-2.6
-apt-get update
-apt-get install haproxy=2.6.\*
 
-# Enable HAProxy to be started by the init script.
-echo "ENABLED=1" >> /etc/default/haproxy
-mv /etc/haproxy/haproxy.cfg{,.original}
-touch /etc/haproxy/haproxy.cfg
+MY_ID=20639
+CONFIG_FILE=/etc/haproxy/haproxy.cfg
+INPUT_LINE="
+frontend web_server
+        bind *:80
+        mode http
+        default_backend appps
 
-printf %s "global
-    log 127.0.0.1 local0 notice
-    maxconn 2000
-    user haproxy
-    group haproxy
+backend appps
+        balance roundrobin
+        option forwardfor # ensure forwarded request includes cleint ip
+        server 20639-web-01 3.227.217.150
+        server 20639-web-02 3.95.27.202
+"
 
-defaults
-    log     global
-    mode    http
-    option  httplog
-    option  dontlognull
-    retries 3
-    option redispatch
-    timeout connect  5000
-    timeout client  10000
-    timeout server  10000
+# check if hostname is correct
+if [[ $(hostname) =~ ^$MY_ID-lb-[0-9]+ ]]; then
+    echo 'hostname properly configured'
+else
+    >&2 echo 'hostname not configured properly...'
+    >&2 echo 'please set hostname to pattern: 496-lb-<server_id>...'
+    >&2 echo 'Example: sudo hostnamectl set-hostname 496-lb-<insert_server_id_here>'
+fi
 
-listen hbnb
-    bind 0.0.0.0:80
-    mode http
-    stats enable
-    stats uri /haproxy?stats
-    balance roundrobin
-    option httpclose
-    option forwardfor
-    server 20639-web-01 3.227.217.150:80 check
-    server 20639-web-02 3.227.217.150:80 check
-" >> /etc/haproxy/haproxy.cfg
+# check if HAProxy was previously configured
+if [ "$(grep -o "$INPUT_LINE" $CONFIG_FILE | wc -l)" != 0 ]; then
+	echo 'HAProxy already configured to script specs :)...'
+	# restart HAProxy
+	service haproxy restart
+else
+	# install HAProxy Version 2.6
+    apt-get install -y software-properties-common
+    add-apt-repository -y ppa:vbernat/haproxy-2.6
+    apt-get -y update
+    apt-get -y install haproxy=2.6.\*
 
-service haproxy start
+	# configure HAProxyd
+
+	printf "%s" "$INPUT_LINE" >> $CONFIG_FILE
+
+	# start HAProxy
+	service haproxy start
+fi
