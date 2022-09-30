@@ -21,8 +21,8 @@ if [[ $(hostname) =~ ^$MY_ID-lb-[0-9]+ ]]; then
     echo 'hostname properly configured'
 else
     >&2 echo 'hostname not configured properly...'
-    >&2 echo 'please set hostname to pattern: 496-lb-<server_id>...'
-    >&2 echo 'Example: sudo hostnamectl set-hostname 496-lb-<insert_server_id_here>'
+    >&2 echo 'please set hostname to pattern: 20639-lb-<server_id>...'
+    >&2 echo 'Example: sudo hostnamectl set-hostname 20639-lb-<insert_server_id_here>'
 fi
 
 # check if HAProxy was previously configured
