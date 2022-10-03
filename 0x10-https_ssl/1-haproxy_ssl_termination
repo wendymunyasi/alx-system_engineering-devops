@@ -40,7 +40,7 @@ backend munyasi.tech-backend
         server 20639-web-01 3.227.217.150:80 check
         server 20639-web-02 3.95.27.202:80 check
 
-frontend www-http-munyasi.tech-frontend
+frontend munyasi.tech-frontend
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/munyasi.tech.pem
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
