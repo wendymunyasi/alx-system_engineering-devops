@@ -1,46 +1,57 @@
 #!/usr/bin/env bash
 # script to install and configure HAproxy on load balancer server
 
-MY_ID=20639
-CONFIG_FILE=/etc/haproxy/haproxy.cfg
-INPUT_LINE="
-frontend web_server
-        bind *:80
-        mode http
-        default_backend appps
+apt-get update
+apt-get -y install --no-install-recommends software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.4
+apt-get -y install haproxy
 
-backend appps
-        balance roundrobin
-        option forwardfor # ensure forwarded request includes cleint ip
-        server 20639-web-01 3.227.217.150
-        server 20639-web-02 3.95.27.202
+# the load balancer's configuration
+DOMAIN_NAME='munyasi.tech'
+INIT_FILE='/etc/default/haproxy'
+CONFIG_FILE='/etc/haproxy/haproxy.cfg'
+HAPROXY_LB_CONFIG=\
+"
+#--$DOMAIN_NAME-params-begin--
+backend $DOMAIN_NAME-backend
+	balance roundrobin
+    server 20639-web-01 3.227.217.150:80 check
+    server 20639-web-02 3.95.27.202:80 check
+
+frontend $DOMAIN_NAME-frontend
+	bind *:80
+	mode http
+
+	default_backend $DOMAIN_NAME-backend
+#--$DOMAIN_NAME-params-end--
 "
 
-# check if hostname is correct
-if [[ $(hostname) =~ ^$MY_ID-lb-[0-9]+ ]]; then
-    echo 'hostname properly configured'
+[ -f "$INIT_FILE" ] || touch "$INIT_FILE"
+[ -f "$CONFIG_FILE" ] || touch "$CONFIG_FILE"
+
+CONFIG_WORDS=$(grep -Eco "$DOMAIN_NAME-backend" < $CONFIG_FILE)
+
+if [ "$(grep -Eco '^ENABLED=[01]$' < $INIT_FILE)" -gt 0 ]; then
+	sed -i 's/^ENABLED=0$/ENABLED=1/' "$INIT_FILE"
 else
-    >&2 echo 'hostname not configured properly...'
-    >&2 echo 'please set hostname to pattern: 20639-lb-<server_id>...'
-    >&2 echo 'Example: sudo hostnamectl set-hostname 20639-lb-<insert_server_id_here>'
+	echo 'ENABLED=1' >> $INIT_FILE
 fi
 
-# check if HAProxy was previously configured
-if [ "$(grep -o "$INPUT_LINE" $CONFIG_FILE | wc -l)" != 0 ]; then
-	echo 'HAProxy already configured to script specs :)...'
-	# restart HAProxy
-	service haproxy restart
+if [ "$CONFIG_WORDS" -eq 0 ]; then
+	echo -e "$HAPROXY_LB_CONFIG" >> $CONFIG_FILE
 else
-	# install HAProxy Version 2.6
-    apt-get install -y software-properties-common
-    add-apt-repository -y ppa:vbernat/haproxy-2.6
-    apt-get -y update
-    apt-get -y install haproxy=2.6.\*
+	start_tkn="#--$DOMAIN_NAME-params-begin--"
+	end_tkn="#--$DOMAIN_NAME-params-end--"
+	a=$(grep -onE "$start_tkn" < "$CONFIG_FILE" | cut -d : -f1)
+	b=$(grep -onE "$end_tkn" < "$CONFIG_FILE" | cut -d : -f1)
+	a=$((a - 1))
+	b=$((b + 1))
+	sed -i "$a,$b"d "$CONFIG_FILE"
+	echo -en "$HAPROXY_LB_CONFIG" >> $CONFIG_FILE
+fi
 
-	# configure HAProxyd
-
-	printf "%s" "$INPUT_LINE" >> $CONFIG_FILE
-
-	# start HAProxy
+if [ "$(pgrep -c haproxy)" -le 0 ]; then
 	service haproxy start
+else
+	service haproxy restart
 fi
