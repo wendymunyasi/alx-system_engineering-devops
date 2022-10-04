@@ -31,6 +31,6 @@ All of the following folders are projects done during the studies:
 | [`0x0A. Configuration management`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | It aims to install puppet, puppet-lint, pip3 and flask packages.|
 | [`0x0B. SSH`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0B-ssh) | It aims to learn about servers and SSH.|
 | [`0x0C. Web server`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0C-web_server) | It aims to learn about web servers, child processes and HTTP requests.|
-| [`0x0D. Web stack debugging #0`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/00x0D-web_stack_debugging_0) | It aims to learn about webstack debugging, docker and network basics.|
+| [`0x0D. Web stack debugging #0`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0) | It aims to learn about webstack debugging, docker and network basics.|
 | [`0x0E. Web stack debugging #1`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_1) | It aims to learn more about webstack debugging and **nginx** server.|
 | [`0x0F. Load balancer`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0F-load_balancer) | It aims to learn about load balancing and HAproxy.|
