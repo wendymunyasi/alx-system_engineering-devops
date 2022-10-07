@@ -23,7 +23,7 @@ Tel:*+254707240068.*
 Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
 
 
-* **0. OSI model** - What is the OSI model? How is the OSI model organized?. `0-OSI_model`.
+* **0. OSI model** - What is the OSI model? How is the OSI model organized? - `0-OSI_model`.
     ```
     What is the OSI model?
         1.  Set of specifications that network hardware manufacturers must respect.
@@ -37,7 +37,7 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
     ```
 ---
 
-* **1. Types of network** - What type of network a computer in local is connected to? What type of network could connect an office in one building to another office in a building a few streets away? What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)? `1-types_of_network`.
+* **1. Types of network** - What type of network a computer in local is connected to? What type of network could connect an office in one building to another office in a building a few streets away? What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)? - `1-types_of_network`.
     ```
     What type of network a computer in local is connected to?
     Internet
@@ -56,7 +56,7 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
     ```
 ---
 
-* **2. MAC and IP address** - What is a MAC address? What is an IP address? `2-MAC_and_IP_address`.
+* **2. MAC and IP address** - What is a MAC address? What is an IP address? - `2-MAC_and_IP_address`.
     ```
     What is a MAC address?
         1.  The name of a network interface.
@@ -70,7 +70,7 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
     ```
 ---
 
-* **3. UDP and TCP** - Which statement is correct for the TCP box? Which statement is correct for the UDP  box? Which statement is correct for the TCP worker? `3-UDP_and_TCP`.
+* **3. UDP and TCP** - Which statement is correct for the TCP box? Which statement is correct for the UDP  box? Which statement is correct for the TCP worker? - `3-UDP_and_TCP`.
     ```
     Which statement is correct for the TCP box?
         1.  It is a protocol that is transferring data in a slow way but surely.
@@ -84,8 +84,8 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
     ```
 ---
 
-* **4. TCP and UDP ports** - Write a Bash script that displays listening ports. `4-TCP_and_UDP_ports`.
-* **5. Is the host on the network** - Write a Bash script that pings an IP address passed as an argument. `5-is_the_host_on_the_network`.
+* **4. TCP and UDP ports** - Write a Bash script that displays listening ports. - `4-TCP_and_UDP_ports`.
+* **5. Is the host on the network** - Write a Bash script that pings an IP address passed as an argument. - `5-is_the_host_on_the_network`.
 
 
 ## Collaborate

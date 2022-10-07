@@ -26,7 +26,7 @@ What is `/etc/hosts`.
 How to display your machine’s active network interfaces.
 
 
-* **0. Change your home IP** - Write a Bash script that configures an Ubuntu server with the below requirements. `0-change_your_home_IP`.
+* **0. Change your home IP** - Write a Bash script that configures an Ubuntu server with the below requirements. - `0-change_your_home_IP`.
     *   `localhost` resolves to `127.0.0.2`.
     *   `facebook.com` resolves `to 8.8.8.8`.
     *   The checker is running on Docker.
@@ -68,7 +68,7 @@ How to display your machine’s active network interfaces.
     ```
 ---
 
-* **1. Show attached IPs** - Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on. `1-show_attached_IPs`.
+* **1. Show attached IPs** - Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on. - `1-show_attached_IPs`.
     ```
     sylvain@ubuntu$ ./1-show_attached_IPs | cat -e
     10.0.2.15$
@@ -77,7 +77,7 @@ How to display your machine’s active network interfaces.
     ```
 ---
 
-* **2. Port listening on localhost** - Write a Bash script that listens on port `98` on `localhost`. `100-port_listening_on_localhost`.
+* **2. Port listening on localhost** - Write a Bash script that listens on port `98` on `localhost`. - `100-port_listening_on_localhost`.
 
     **Terminal 0 - starting my script.**
     ```

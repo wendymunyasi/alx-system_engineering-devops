@@ -37,7 +37,7 @@ $ gem install puppet-lint
 ```
 
 
-* **0. Create a file** - Using Puppet, create a file in `/tmp`. `0-create_a_file.pp`.
+* **0. Create a file** - Using Puppet, create a file in `/tmp`. - `0-create_a_file.pp`.
 
   Requirements:
 
@@ -63,7 +63,7 @@ $ gem install puppet-lint
   ```
 ---
 
-* **1. Install a package** - Using Puppet, install `flask` from `pip3`. Version must be `2.1.0`. `1-install_a_package.pp`.
+* **1. Install a package** - Using Puppet, install `flask` from `pip3`. Version must be `2.1.0`. - `1-install_a_package.pp`.
   ```
   root@9665f0a47391:/# puppet apply 1-install_a_package.pp
   Notice: Compiled catalog for 9665f0a47391 in environment production in 0.14 seconds

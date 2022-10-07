@@ -27,7 +27,7 @@ What are the main HTTP requests.
 What DNS stands for and its main role.
 
 
-* **0. Transfer a file to your server** - Write a Bash script that transfers a file from our client to a server. `0-transfer_file`.
+* **0. Transfer a file to your server** - Write a Bash script that transfers a file from our client to a server. - `0-transfer_file`.
 
   Requirements:
 
@@ -65,7 +65,7 @@ What DNS stands for and its main role.
 
 ---
 
-* **1. Install nginx web server** - Install `nginx` on your `web-01` server. `1-install_nginx_web_server`.
+* **1. Install nginx web server** - Install `nginx` on your `web-01` server. - `1-install_nginx_web_server`.
 
   Requirements:
 
@@ -131,7 +131,7 @@ What DNS stands for and its main role.
   ```
 ---
 
-* **3. Redirection** - Configure your Nginx server so that `/redirect_me` is redirecting to another page. `3-redirection`.
+* **3. Redirection** - Configure your Nginx server so that `/redirect_me` is redirecting to another page. - `3-redirection`.
 
   Requirements:
 
@@ -151,7 +151,7 @@ What DNS stands for and its main role.
   ```
 ---
 
-* **4. Not found page 404** - Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`. `100-puppet_ssh_config.pp`.
+* **4. Not found page 404** - Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`. - `100-puppet_ssh_config.pp`.
 
   Requirements:
 
@@ -175,7 +175,7 @@ What DNS stands for and its main role.
   ```
 ---
 
-* **5. Install Nginx web server (w/ Puppet)** - Time to practice configuring your server with Puppet!. Install and configure an Nginx server using Puppet instead of Bash. `7-puppet_install_nginx_web_server.pp`.
+* **5. Install Nginx web server (w/ Puppet)** - Time to practice configuring your server with Puppet!. Install and configure an Nginx server using Puppet instead of Bash. - `7-puppet_install_nginx_web_server.pp`.
 
   Requirements:
 

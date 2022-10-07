@@ -26,7 +26,7 @@ What is `/etc/hosts`.
 How to display your machine’s active network interfaces.
 
 
-* **0. World wide web** - Configure your domain zone so that the subdomain `www` points to your load-balancer IP (`lb-01`). Let’s also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains. `0-world_wide_web`.
+* **0. World wide web** - Configure your domain zone so that the subdomain `www` points to your load-balancer IP (`lb-01`). Let’s also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains. - `0-world_wide_web`.
 
 	**Example**
 	```
@@ -56,7 +56,7 @@ How to display your machine’s active network interfaces.
 	```
 ---
 
-* **1. HAproxy SSL termination** - Create a certificate using certbot and configure HAproxy to accept encrypted traffic for your subdomain `www`. `1-haproxy_ssl_termination`.
+* **1. HAproxy SSL termination** - Create a certificate using certbot and configure HAproxy to accept encrypted traffic for your subdomain `www`. - `1-haproxy_ssl_termination`.
 
 	Requirements:
 	
@@ -83,7 +83,7 @@ How to display your machine’s active network interfaces.
   ```
 ---
 
-* **2. No loophole in your website traffic** -  Configure HAproxy to automatically redirect HTTP traffic to HTTPS. `100-redirect_http_to_https`.
+* **2. No loophole in your website traffic** -  Configure HAproxy to automatically redirect HTTP traffic to HTTPS. - `100-redirect_http_to_https`.
 
 	```
 	sylvain@ubuntu$ curl -sIL http://www.holberton.online

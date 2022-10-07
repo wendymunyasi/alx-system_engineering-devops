@@ -24,7 +24,7 @@ Tel:*+254707240068.*
 Learn **DOCKER**.
 
 
-* **0. Give me a page!** - In this first debugging project, you will need to get `Apache` to run on the container and to return a page containing `Hello Holberton` when querying the root of it. `0-use_a_private_key`.
+* **0. Give me a page!** - In this first debugging project, you will need to get `Apache` to run on the container and to return a page containing `Hello Holberton` when querying the root of it. - `0-use_a_private_key`.
 
   Example:
   ```
