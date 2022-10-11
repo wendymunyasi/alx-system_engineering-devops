@@ -2,4 +2,4 @@
 # script should run the whoami command under the user passed as an argument
 # make sure to try your script by passing different users
 
-sudo -i "$1" whoami
+sudo -u "$1" whoami
