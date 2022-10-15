@@ -1,4 +1,4 @@
-#!/usr/bin/bash env
+#!/usr/bin/env bash
 # script that generates a MySQL dump and creates a compressed archive out of it
 # The MySQL dump must contain all your MySQL databases
 # The MySQL dump must be named backup.sql
