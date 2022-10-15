@@ -28,7 +28,10 @@ All of the following folders are projects done during the studies:
 | [`0x08. Networking basics #1`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x08-networking_basics_2) | It aims to learn more about networking, localhosts and `/etc/hosts`.|
 | [`0x09. Web infrastructure design`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design) | It aims to learn more about web infrastructure design, HTTPS, DNS etc.|
 | [`0x10. HTTPS SSL`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x10-https_ssl) | It aims to learn about SSL and SSL termination.|
-| [`0x0A. Configuration management`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0A-configuration_management) | It aims to install puppet, puppet-lint, pip3 and flask packages.|
+| [`0x10. HTTPS SSL`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x10-https_ssl) | It aims to learn about SSL and SSL termination.|
+| [`0x12. Web stack debugging #2`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2) | It aims to learn more about Linux commands.|
+| [`0x13. Firewall`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x13-firewall) | It aims to learn about firewall - blocking traffic and port forwading.|
+| [`0x14. MySQL`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x14-mysql) | It aims to learn about mySQL databases.|
 | [`0x0B. SSH`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0B-ssh) | It aims to learn about servers and SSH.|
 | [`0x0C. Web server`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0C-web_server) | It aims to learn about web servers, child processes and HTTP requests.|
 | [`0x0D. Web stack debugging #0`](https://github.com/wendymunyasi/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0) | It aims to learn about webstack debugging, docker and network basics.|
