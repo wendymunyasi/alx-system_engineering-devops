@@ -22,9 +22,9 @@ if __name__ == "__main__":
     # parse the data into JSON format
     data = json.loads(data)
     # extract user data, in this case, name of employee
-    user_name = data[0].get('name')
+    name = data[0].get('name')
     # print("id is: {}".format(user_id))
-    # print("name is: {}".format(user_name))
+    # print("name is: {}".format(name))
 
     # get user info about todo tasks
     # e.g https://jsonplaceholder.typicode.com/users/1/todos
@@ -54,6 +54,6 @@ if __name__ == "__main__":
 
     # print the output in the required format
     print("Employee {} is done with tasks({}/{}):"
-          .format(user_name, completed, total_tasks))
+          .format(name, completed, total_tasks))
     for task in completed_tasks:
         print("\t {}".format(task.get('title')))
