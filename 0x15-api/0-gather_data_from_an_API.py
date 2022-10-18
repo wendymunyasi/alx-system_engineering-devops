@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """script that fetches info about a given employee's ID using an api"""
-import requests
-import sys
 import json
+import sys
 
+import requests
 
 base_url = 'https://jsonplaceholder.typicode.com'
 
