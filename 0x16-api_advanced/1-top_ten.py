@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module that consumes the Reddit API and returns the number of subscribers"""
+"""Module that consumes the Reddit API and prints the titles of the first
+10 hot posts listed for a given subreddit."""
 import requests
 
 
