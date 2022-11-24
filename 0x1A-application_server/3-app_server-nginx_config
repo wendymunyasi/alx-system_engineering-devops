@@ -19,13 +19,13 @@ server {
                 proxy_pass http://localhost:5001;
         }
 
+        location /airbnb-dynamic/number_odd_or_even/ {
+                include proxy_params;
+                proxy_pass http://0.0.0.0:5001/number_odd_or_even/;
+        }
+
         location = /404.html {
                 root /var/www/error/;
                 internal;
         }
 }
-
-# Server route with query parameters /airbnb-dynamic/number_odd_or_even/$1 to the public
-    location ~ /airbnb-dynamic/number_odd_or_even/([0-9]+)$ {
-        proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
-    }
