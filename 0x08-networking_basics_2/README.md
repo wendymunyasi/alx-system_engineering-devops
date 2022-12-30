@@ -105,4 +105,4 @@ How to display your machine’s active network interfaces.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

@@ -100,4 +100,4 @@ What are the 2 signals that cannot be ignored.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

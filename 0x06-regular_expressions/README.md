@@ -108,4 +108,4 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

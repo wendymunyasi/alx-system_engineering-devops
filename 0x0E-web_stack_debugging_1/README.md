@@ -126,4 +126,4 @@ What DNS stands for and its main role.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

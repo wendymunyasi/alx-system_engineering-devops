@@ -1,6 +1,12 @@
-# Web infrastructure design
+# Project Name.
+**0x09. Web infrastructure design**
 
-Project done during **Full Stack Software Engineering studies** at **ALX**. It aims to learn about how to design a Web Infrastructure.
+## Author's Details.
+Name: *Wendy Munyasi.*
+
+Email: *wendymunyasi@gmail.com*
+
+Tel:*+254707240068.*
 
 ## Key concepts
 * Network basics
@@ -23,3 +29,8 @@ Project done during **Full Stack Software Engineering studies** at **ALX**. It a
 | `1-distributed_web_infrastructure` | Web Infrastructure Design, based on `0-simple_web_stack` that contains some additional components: 1 server, 1 web server, 1 application server, 1 load-balancer, 1 set of application files, 1 database. |
 | `2-secured_and_monitored_web_infrastructure` | Web Infrastructure Design, based on `1-distributed_web_infrastructure` that contains some additional components: 3 firewalls, 1 SSL certificate, 3 monitoring clients. |
 | `3-scale_up` | Web Infrastructure Design, based on `2-secured_and_monitored_web_infrastructure` that contains some additional components: 1 server, 1 load-balancer. |
+
+
+## Collaborate
+
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

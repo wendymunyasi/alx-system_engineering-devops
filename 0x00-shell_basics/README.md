@@ -83,4 +83,4 @@ What is the difference between a hard link and a symbolic link.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

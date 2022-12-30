@@ -92,4 +92,4 @@ What are files and other comparison operators, and how to use them.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.

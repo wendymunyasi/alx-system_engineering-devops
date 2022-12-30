@@ -90,4 +90,4 @@ Learn the OSI model, what LAN and WAN are, TCP/UDP and the internet.
 
 ## Collaborate
 
-To collaborate, reach me through my email address wendymunyasi@gmail.com
+To collaborate, reach me through my email address wendymunyasi@gmail.com.
